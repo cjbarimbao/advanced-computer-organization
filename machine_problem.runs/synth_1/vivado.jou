@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Aug  9 23:49:13 2022
+# Process ID: 5044
+# Current directory: G:/My Drive/Work Space/Academics/CoE 113/Machine Problem 1/machine_problem/machine_problem.runs/synth_1
+# Command line: vivado.exe -log processor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source processor.tcl
+# Log file: G:/My Drive/Work Space/Academics/CoE 113/Machine Problem 1/machine_problem/machine_problem.runs/synth_1/processor.vds
+# Journal file: G:/My Drive/Work Space/Academics/CoE 113/Machine Problem 1/machine_problem/machine_problem.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source processor.tcl -notrace
