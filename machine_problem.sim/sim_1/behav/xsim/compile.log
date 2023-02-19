@@ -14,5 +14,5 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "G:/My Drive/Work Space/Academics/Co
 INFO: [VRFC 10-311] analyzing module register_file
 INFO: [VRFC 10-2263] Analyzing Verilog file "G:/My Drive/Work Space/Academics/CoE 113/Machine Problem 1/machine_problem/machine_problem.srcs/sources_1/new/sign_extend.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sign_extend
-INFO: [VRFC 10-2263] Analyzing Verilog file "G:/My Drive/Work Space/Academics/CoE 113/Machine Problem 1/machine_problem/machine_problem.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/My Drive/Work Space/Academics/CoE 113/Machine Problem 1/machine_problem/machine_problem.srcs/sources_1/new/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module

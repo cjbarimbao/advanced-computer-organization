@@ -2,10 +2,10 @@
 # Webtalk v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sat Aug 20 15:09:02 2022
-# Process ID: 11444
+# Start of session at: Sat Feb 18 17:26:42 2023
+# Process ID: 9572
 # Current directory: G:/My Drive/Work Space/Academics/CoE 113/Machine Problem 1/machine_problem/machine_problem.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source G:/My Drive/Work Space/Academics/CoE 113/Machine Problem 1/machine_problem/machine_problem.sim/sim_1/behav/xsim/xsim.dir/tb_processor_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source G:/My Drive/Work Space/Academics/CoE 113/Machine Problem 1/machine_problem/machine_problem.sim/sim_1/behav/xsim/xsim.dir/top_module_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: G:/My Drive/Work Space/Academics/CoE 113/Machine Problem 1/machine_problem/machine_problem.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: G:/My Drive/Work Space/Academics/CoE 113/Machine Problem 1/machine_problem/machine_problem.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------

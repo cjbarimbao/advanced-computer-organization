@@ -25,7 +25,7 @@ module top_module
     
     mem_prog i_mem_prog (
         .addr(pc[31:2]),
-        .inst(inst)
+        .rdata(inst)
     );
     
     mem_model i_mem_model (
