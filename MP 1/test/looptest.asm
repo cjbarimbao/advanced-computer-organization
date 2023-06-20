@@ -1,0 +1,15 @@
+ld x15,0(x0)
+ld x16,8(x0)
+ld x17,8(x0)
+add x20,x0,x0
+add x20,x20,x15
+addi x16,x16,-1
+bne x16,x0,-8
+sd x20,16(x0)
+add x21,x0,x0
+add x22,x0,x0
+beq x22,x17,16
+add x21,x21,x15
+addi x22,x22,1
+jal x23,-12
+sd x21,24(x0)

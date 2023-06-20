@@ -1,0 +1,1 @@
+The directory this file is contained has all the standard tests that are used to evaluate your machine problem 1. Each test has two files: (1) [test].asm which is the assembly representation of the test, and (2) [test]_data.mem which contains the values of data memory (directly called by $readmemh) for that specific test. 
