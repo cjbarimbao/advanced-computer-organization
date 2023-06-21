@@ -15,14 +15,31 @@ module processor
     
 
     // wire declarations
+         
     wire [63:0] ReadData1, ReadData2, op2, ALUresult, immediate;
+        // ReadData signals are the outputs of the register file
+        // op2 is the second operand for the ALU
+        // immediate is the sign-extended immediate value
     wire [31:0] BranchAddr;
+        // BranchAddr is the PC offset, i.e. sign-extended immediate value shifted left by 1 
     wire [2:0]  ALUop;
+        // ALUop is the ALU operation code
     wire [1:0]  ImmSelect, PCsrc, MemtoReg;
+        // Control signals:
+            // ImmSelect is the immediate value selection code
+            // PCsrc is the PC source selection code
+            // MemtoReg is the memory to register selection code
     wire        RegWrite, ALUZero, ALUsrc;
+        // Control signals:
+            // RegWrite is the register write enable signal
+            // ALUZero asserts is ALU output is equal to zero
+            // ALUsrc is the ALU source selection signal
 
     // reg declarations
-    reg  [63:0] WriteData, IF_ID_inst, ID_EX_rs1, ID_EX_rs2, ID_EX_ReadData2, EX_MEM_ALUresult, MEM_WB_ALUresult;
+    reg  [63:0] WriteData, IF_ID_inst, ID_EX_rs1, ID_EX_rs2, EX_MEM_ALUresult, MEM_WB_ALUresult;
+        // WriteData is the data to be written to the register file
+        
+
     reg  [31:0] NextPC, IF_ID_pc, ID_EX_pc, ID_EX_immediate, EX_MEM_pc, MEM_WB_pc;
     
     assign BranchAddr = {immediate[30:0], 1'b0};
@@ -129,7 +146,7 @@ module processor
             //ID_EX_inst <= 0;
             ID_EX_immediate <= 0;
             //ID_EX_ReadData1 <= 0;
-            ID_EX_ReadData2 <= 0;
+            //ID_EX_ReadData2 <= 0;
             ID_EX_RegWrite <= 0;
             //ID_EX_ALUsrc <= 0;
             ID_EX_ALUop <= 0;
@@ -139,12 +156,12 @@ module processor
         end else begin
             ID_EX_pc <= IF_ID_pc;
             ID_EX_rs1 <= ReadData1;             // ReadData1
-            ID_EX_rs2 <= op2;                   // immediate or ReadData2
+            ID_EX_rs2 <= ReadData2;                   // immediate or ReadData2
             ID_EX_rd <= IF_ID_inst[11:7];       // destination register for writes
             //ID_EX_inst <= IF_ID_inst;           
             ID_EX_immediate <= immediate;
             //ID_EX_ReadData1 <= ReadData1;     // redundant with rs1
-            ID_EX_ReadData2 <= ReadData2;       // propagate for mem writes
+            //ID_EX_ReadData2 <= ReadData2;       // propagate for mem writes
             ID_EX_RegWrite <= RegWrite;         // propagate for reg writes   
             //ID_EX_ALUsrc <= ALUsrc;           // not needed, since op2 is propagated             
             ID_EX_ALUop <= ALUop;               // from controller, so need to sync with ID stage
