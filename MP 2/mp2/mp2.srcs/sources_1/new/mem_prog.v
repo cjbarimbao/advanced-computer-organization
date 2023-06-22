@@ -11,8 +11,8 @@
 //`define LDTEST
 //`define ATEST
 //`define BTEST
-//`define LTEST
-`define JTEST
+`define LTEST
+//`define JTEST
 //`define PLDTEST
 //`define PATEST
 //`define PBTEST
