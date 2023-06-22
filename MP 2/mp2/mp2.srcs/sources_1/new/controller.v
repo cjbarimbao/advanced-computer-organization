@@ -80,7 +80,7 @@ module controller
                 end 
                 opcode_reg: begin
                     RegWrite = 1;
-                    case ({ID_inst[31:25],ID_inst[14:12]})
+                    case ({inst[31:25],inst[14:12]})
                         {funct7_add, funct3_add}:   ALUop = 3'b000;
                         {funct7_sub, funct3_sub}:   ALUop = 3'b001;
                         {funct7_and, funct3_and}:   ALUop = 3'b010;
@@ -98,7 +98,7 @@ module controller
                     MemtoReg = 2'b01;
                 end
                 opcode_branch: begin
-                    PCsrc    = (EX_inst[14:12] == funct3_beq) ? ({1'b0, ALUZero}) : ({1'b0, ~ALUZero});
+                    PCsrc    = (inst[14:12] == funct3_beq) ? ({1'b0, ALUZero}) : ({1'b0, ~ALUZero});
                     InstType = b_type;
                     ALUop    = 3'b001; 
                 end 

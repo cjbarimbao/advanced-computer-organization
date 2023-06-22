@@ -10,7 +10,12 @@ module processor
         output  [63:0]  wdata,
         output  [31:0]  pc,
         output  [31:0]  addr,
-        output  [7:0]   wmask
+        output  [7:0]   wmask,
+        output  [63:0]  ALUop1,
+        output  [63:0]  ALUop2,
+        output  [63:0]  ALUres,
+        output  [63:0]  RFwrdata,
+        output          RFwren
     );
     
 
@@ -77,6 +82,13 @@ module processor
     assign addr = EX_MEM_ALUresult[31:0];
     assign wmask = 8'hff;
     assign wr_en = EX_MEM_MemWrite;
+    
+    
+    assign  ALUop1 = ID_EX_ReadData1;
+    assign  ALUop2 = ID_EX_ReadData2;
+    assign  ALUres = EX_MEM_ALUresult;
+    assign  RFwrdata = MEM_WB_WriteData;
+    assign  RFwren = MEM_WB_RegWrite;
     
     // Instruction Fetch Stage
 
