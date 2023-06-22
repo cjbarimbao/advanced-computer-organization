@@ -73,9 +73,10 @@ module processor
 
     assign BranchAddr = {immediate[30:0], 1'b0};
     assign op2 = ALUsrc ? immediate : ID_EX_ReadData2;
-    assign wdata = ReadData2;
+    assign wdata = EX_MEM_ReadData2;
     assign addr = EX_MEM_ALUresult[31:0];
     assign wmask = 8'hff;
+    assign wr_en = EX_MEM_MemWrite;
     
     // Instruction Fetch Stage
 
