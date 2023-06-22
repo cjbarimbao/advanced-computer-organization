@@ -21,7 +21,7 @@ add x1,x0,x20
 addi x0, x0, 0
 addi x0, x0, 0
 addi x0, x0, 0
-jalr x0,-8(x1)
+jalr x0, 68(x1)
 jump1:
 ld x11,0(x0)
 addi x0, x0, 0
