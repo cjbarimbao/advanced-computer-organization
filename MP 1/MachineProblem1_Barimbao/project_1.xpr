@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/CJ/Desktop/project_1/project_1.xpr">
+<Project Version="7" Minor="44" Path="C:/Users/CJ/Desktop/advanced-computer-organization/MP 1/MachineProblem1_Barimbao/project_1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="4ea635395dd642c3a37d7152c4db11ee"/>
@@ -30,7 +30,7 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="arty-a7-35"/>
-    <Option Name="WTXSimLaunchSim" Val="167"/>
+    <Option Name="WTXSimLaunchSim" Val="168"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -61,7 +61,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/new/alu.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../advanced-computer-organization/MP 1/machine_problem.srcs/sources_1/new/alu.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../machine_problem.srcs/sources_1/new/alu.v"/>
           <Attr Name="ImportTime" Val="1686728666"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -70,7 +70,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/controller.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../advanced-computer-organization/MP 1/machine_problem.srcs/sources_1/new/controller.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../machine_problem.srcs/sources_1/new/controller.v"/>
           <Attr Name="ImportTime" Val="1686728666"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -79,7 +79,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/pc.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../advanced-computer-organization/MP 1/machine_problem.srcs/sources_1/new/pc.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../machine_problem.srcs/sources_1/new/pc.v"/>
           <Attr Name="ImportTime" Val="1686728666"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -88,7 +88,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/register_file.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../advanced-computer-organization/MP 1/machine_problem.srcs/sources_1/new/register_file.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../machine_problem.srcs/sources_1/new/register_file.v"/>
           <Attr Name="ImportTime" Val="1686728666"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -97,7 +97,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/sign_extend.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../advanced-computer-organization/MP 1/machine_problem.srcs/sources_1/new/sign_extend.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../machine_problem.srcs/sources_1/new/sign_extend.v"/>
           <Attr Name="ImportTime" Val="1686728666"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -106,7 +106,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/processor.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../advanced-computer-organization/MP 1/machine_problem.srcs/sources_1/new/processor.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../machine_problem.srcs/sources_1/new/processor.v"/>
           <Attr Name="ImportTime" Val="1686728666"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -136,7 +136,7 @@
       <File Path="$PSRCDIR/sources_1/new/top_module.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../advanced-computer-organization/MP 1/machine_problem.srcs/sources_1/new/top_module.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../machine_problem.srcs/sources_1/new/top_module.v"/>
           <Attr Name="ImportTime" Val="1686728666"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -174,7 +174,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_1/new/tb_processor.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../advanced-computer-organization/MP 1/machine_problem.srcs/sim_1/new/tb_processor.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../machine_problem.srcs/sim_1/new/tb_processor.v"/>
           <Attr Name="ImportTime" Val="1686728666"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -184,7 +184,7 @@
       <File Path="$PSRCDIR/sim_1/new/tb_top_module.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../advanced-computer-organization/MP 1/machine_problem.srcs/sim_1/new/tb_top_module.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../machine_problem.srcs/sim_1/new/tb_top_module.v"/>
           <Attr Name="ImportTime" Val="1686728666"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -194,7 +194,6 @@
       <File Path="$PSRCDIR/sim_1/imports/memory_model/tb_mem_prog.v">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../advanced-computer-organization/memory_model/tb_mem_prog.v"/>
           <Attr Name="ImportTime" Val="1623314240"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -205,8 +204,7 @@
       <File Path="$PSRCDIR/sim_1/new/tb_pc.v">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../advanced-computer-organization/MP 1/machine_problem.srcs/sim_1/new/tb_pc.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../machine_problem.srcs/sim_1/new/tb_pc.v"/>
           <Attr Name="ImportTime" Val="1686728666"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -216,8 +214,7 @@
       <File Path="$PSRCDIR/sim_1/new/tb_sign_extend.v">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../advanced-computer-organization/MP 1/machine_problem.srcs/sim_1/new/tb_sign_extend.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../machine_problem.srcs/sim_1/new/tb_sign_extend.v"/>
           <Attr Name="ImportTime" Val="1686728666"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -227,8 +224,7 @@
       <File Path="$PSRCDIR/sim_1/new/tb_register_file.v">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../advanced-computer-organization/MP 1/machine_problem.srcs/sim_1/new/tb_register_file.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../machine_problem.srcs/sim_1/new/tb_register_file.v"/>
           <Attr Name="ImportTime" Val="1686728666"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -238,8 +234,7 @@
       <File Path="$PSRCDIR/sim_1/new/tb_alu.v">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../advanced-computer-organization/MP 1/machine_problem.srcs/sim_1/new/tb_alu.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../machine_problem.srcs/sim_1/new/tb_alu.v"/>
           <Attr Name="ImportTime" Val="1686728666"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -249,8 +244,7 @@
       <File Path="$PSRCDIR/sim_1/new/tb_controller.v">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../advanced-computer-organization/MP 1/machine_problem.srcs/sim_1/new/tb_controller.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../machine_problem.srcs/sim_1/new/tb_controller.v"/>
           <Attr Name="ImportTime" Val="1686728666"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -260,7 +254,6 @@
       <File Path="$PSRCDIR/sim_1/imports/memory_model/tb_mem_model.v">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../advanced-computer-organization/memory_model/tb_mem_model.v"/>
           <Attr Name="ImportTime" Val="1623314240"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -308,37 +301,37 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../advanced-computer-organization/MP 1/tb_controller_behav.wcfg">
+      <File Path="$PPRDIR/../tb_controller_behav.wcfg">
         <FileInfo>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../advanced-computer-organization/MP 1/tb_alu_behav.wcfg">
+      <File Path="$PPRDIR/../tb_alu_behav.wcfg">
         <FileInfo>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../advanced-computer-organization/MP 1/tb_register_file_behav.wcfg">
+      <File Path="$PPRDIR/../tb_register_file_behav.wcfg">
         <FileInfo>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../advanced-computer-organization/MP 1/tb_sign_extend_behav.wcfg">
+      <File Path="$PPRDIR/../tb_sign_extend_behav.wcfg">
         <FileInfo>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../advanced-computer-organization/MP 1/tb_pc_behav.wcfg">
+      <File Path="$PPRDIR/../tb_pc_behav.wcfg">
         <FileInfo>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../advanced-computer-organization/MP 1/tb_mem_prog_behav.wcfg">
+      <File Path="$PPRDIR/../tb_mem_prog_behav.wcfg">
         <FileInfo>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../advanced-computer-organization/MP 1/tb_processor_behav.wcfg">
+      <File Path="$PPRDIR/../tb_processor_behav.wcfg">
         <FileInfo>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -400,15 +393,14 @@
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
         <Option Name="SelectedSimModel" Val="rtl"/>
-        <Option Name="SimMode" Val="post-synthesis"/>
         <Option Name="SrcSet" Val="sources_1"/>
-        <Option Name="XSimWcfgFile" Val="$PPRDIR/../advanced-computer-organization/MP 1/tb_controller_behav.wcfg"/>
-        <Option Name="XSimWcfgFile" Val="$PPRDIR/../advanced-computer-organization/MP 1/tb_alu_behav.wcfg"/>
-        <Option Name="XSimWcfgFile" Val="$PPRDIR/../advanced-computer-organization/MP 1/tb_register_file_behav.wcfg"/>
-        <Option Name="XSimWcfgFile" Val="$PPRDIR/../advanced-computer-organization/MP 1/tb_sign_extend_behav.wcfg"/>
-        <Option Name="XSimWcfgFile" Val="$PPRDIR/../advanced-computer-organization/MP 1/tb_pc_behav.wcfg"/>
-        <Option Name="XSimWcfgFile" Val="$PPRDIR/../advanced-computer-organization/MP 1/tb_mem_prog_behav.wcfg"/>
-        <Option Name="XSimWcfgFile" Val="$PPRDIR/../advanced-computer-organization/MP 1/tb_processor_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/../tb_controller_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/../tb_alu_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/../tb_register_file_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/../tb_sign_extend_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/../tb_pc_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/../tb_mem_prog_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/../tb_processor_behav.wcfg"/>
         <Option Name="XSimWcfgFile" Val="$PPRDIR/tb_top_module_behav.wcfg"/>
         <Option Name="XSimWcfgFile" Val="$PPRDIR/tb_processor_func_synth.wcfg"/>
       </Config>

@@ -31,7 +31,7 @@ module processor
     // Control signals:
         // ImmSelect is the immediate value selection code
         // PCsrc is the PC source selection code
-        // MemtoReg is the memory to register selection code
+        // MemtoReg is the memory write back selector
     wire [1:0]  ImmSelect;
     wire [1:0]  PCsrc;
     wire [1:0]  MemtoReg;
@@ -39,6 +39,7 @@ module processor
         // RegWrite is the register write enable signal
         // ALUZero asserts is ALU output is equal to zero
         // ALUsrc is the ALU source selection signal
+        // MemWrite is Data Mem write enable
     wire        RegWrite;
     wire        ALUZero;
     wire        ALUsrc;
@@ -52,6 +53,7 @@ module processor
     reg  [63:0] ID_EX_ReadData2;
     reg  [63:0] EX_MEM_ReadData2;
     reg  [63:0] EX_MEM_ALUresult;
+    reg  [63:0] MEM_WB_WriteData;
 
     reg  [31:0] NextPC;
     reg  [31:0] IF_ID_inst;
@@ -60,34 +62,29 @@ module processor
     reg  [31:0] ID_EX_pc;
     reg  [31:0] EX_MEM_inst;
     reg  [31:0] EX_MEM_pc;
+    reg  [31:0] MEM_WB_inst;
 
-    reg  [2:0]  ID_EX_ALUop;
-        // ALUop is the ALU operation code
-    reg  [1:0]  ID_EX_ImmSelect;
-        // ImmSelect is the immediate value selection code
-    reg  [1:0]  ID_EX_MemtoReg;
-        // Control signals:
-            // ImmSelect is the immediate value selection code
-            // PCsrc is the PC source selection code
-            // MemtoReg is the memory to register selection code
+    reg  [1:0]  EX_MEM_MemtoReg;
 
-    reg         ID_EX_RegWrite, ID_EX_MemWrite;
-        // RegWrite is the register write enable signal
+    
+    reg         EX_MEM_RegWrite;
+    reg         EX_MEM_MemWrite;
+    reg         MEM_WB_RegWrite;
 
     assign BranchAddr = {immediate[30:0], 1'b0};
-    assign op2 = ALUsrc ? immediate : ReadData2;
+    assign op2 = ALUsrc ? immediate : ID_EX_ReadData2;
     assign wdata = ReadData2;
-    assign addr = ALUresult[31:0];
+    assign addr = EX_MEM_ALUresult[31:0];
     assign wmask = 8'hff;
     
     // Instruction Fetch Stage
 
+    /* --- PC Selector --- */
     always@(*) begin
         NextPC = pc + 4;
         case (PCsrc)
-            2'b01: NextPC = pc + BranchAddr;
-            2'b10: NextPC = {ALUresult[31:1], 1'b0};
-            2'b11: NextPC = MEM_WB_pc + 4; // PC + 4 from pipeline register
+            2'b01: NextPC = ID_EX_pc + BranchAddr;      // jal / branch instructions
+            2'b10: NextPC = {ALUresult[31:1], 1'b0};    // jalr instructions
         endcase
     end
     
@@ -103,25 +100,25 @@ module processor
     register_file i_register_file (
         .clk(clk),
         .nrst(nrst),
-        .RegWrite(RegWrite),
-        .ReadReg1(inst[19:15]),
-        .ReadReg2(inst[24:20]),
-        .WriteReg(inst[11:7]),
-        .WriteData(WriteData),
+        .RegWrite(MEM_WB_RegWrite),
+        .ReadReg1(IF_ID_inst[19:15]),
+        .ReadReg2(IF_ID_inst[24:20]),
+        .WriteReg(MEM_WB_inst[11:7]),
+        .WriteData(MEM_WB_WriteData),
         .ReadData1(ReadData1),
         .ReadData2(ReadData2)
     );
     
     sign_extend i_sign_extend (
         .ImmSelect(ImmSelect),
-        .inst(inst[31:7]),
+        .inst(ID_EX_inst[31:7]),
         .immediate(immediate)
     );  
     
     // Execution Stage
 
     alu i_alu (
-        .op1(ReadData1),
+        .op1(ID_EX_ReadData1),
         .op2(op2),
         .ALUop(ALUop),
         .ALUresult(ALUresult),
@@ -133,8 +130,8 @@ module processor
     always@(*) begin
         WriteData = rdata;
         case(EX_MEM_MemtoReg)
-            2'b01:  WriteData = ALUresult;
-            2'b10:  WriteData = {32'h0, pc + 4};
+            2'b01:  WriteData = EX_MEM_ALUresult;
+            2'b10:  WriteData = {32'h0, EX_MEM_pc + 4};
         endcase 
     end
     
@@ -144,7 +141,7 @@ module processor
     controller i_controller (
         .clk(clk),
         .nrst(nrst),
-        .inst(inst),
+        .inst(ID_EX_inst),
         .ALUZero(ALUZero),
         .PCsrc(PCsrc),
         .InstType(ImmSelect),
@@ -161,11 +158,12 @@ module processor
     // IF/ID
     always@(posedge clk or negedge nrst) begin
         if (!nrst) begin
-            IF_ID_inst <= 0;
+            // Data Signals
             IF_ID_pc <= 0;
+            IF_ID_inst <= 0;
         end else begin
-            IF_ID_inst <= inst;
             IF_ID_pc <= pc;
+            IF_ID_inst <= inst;
         end
     end
     
@@ -177,56 +175,49 @@ module processor
             ID_EX_inst <= 0;
             ID_EX_ReadData1 <= 0;
             ID_EX_ReadData2 <= 0;
-            // Control Signals
-            ID_EX_RegWrite <= 0;
-            ID_EX_ALUop <= 0;
-            ID_EX_MemWrite <= 0;
-            ID_EX_MemtoReg <= 0;
-            ID_EX_ImmSelect <= 0;
-            //ID_EX_PCsrc <= 0;                 // Not propagated since PCSrc is computed in EXE stage
         end else begin
             ID_EX_pc <= IF_ID_pc;
             ID_EX_inst <= IF_ID_inst;
             ID_EX_ReadData1 <= ReadData1;             
             ID_EX_ReadData2 <= ReadData2;
-            ID_EX_RegWrite <= RegWrite;         // propagate for reg writes   
-            ID_EX_ALUop <= ALUop;               // from controller, so need to sync with ID stage
-            ID_EX_MemWrite <= MemWrite;            // from controller, so need to sync with ID stage
-            ID_EX_MemtoReg <= MemtoReg;         // from controller, so need to sync with ID stage
-            ID_EX_ImmSelect <= ImmSelect;       // from controller, so need to sync with ID stage
-            //ID_EX_PCsrc <= PCsrc;             // from controller, needs result from ALU
         end
     end
 
     // EX/MEM
     always@(posedge clk or negedge nrst) begin
         if (!nrst) begin
+            // Data Signals
             EX_MEM_pc <= 0;              
             EX_MEM_inst <= 0;
             EX_MEM_ALUresult <= 0;
             EX_MEM_ReadData2 <= 0;
+            // Control Signals
             EX_MEM_RegWrite <= 0;
             EX_MEM_MemWrite <= 0;
+            EX_MEM_MemtoReg <= 0;
         end else begin
             EX_MEM_pc <= ID_EX_pc;
-            EX_MEM_rd <= ID_EX_rd;              // destination register for writes
-            //EX_MEM_inst <= ID_EX_inst;
+            EX_MEM_inst <= ID_EX_inst;
             EX_MEM_ALUresult <= ALUresult;  
-            EX_MEM_ReadData2 <= ReadData2;      // data to store in memory for sd instructions
-            EX_MEM_RegWrite <= RegWrite;        // reg write enable
-            EX_MEM_MemWrite <= ID_EX_MemWrite;           // mem write enable
-            EX_MEM_MemtoReg <= ID_EX_MemtoReg;        // control signal for mux in WB stage
+            EX_MEM_ReadData2 <= ID_EX_ReadData2;    // data to store in memory for sd instructions
+            EX_MEM_RegWrite <= RegWrite;            // reg write enable
+            EX_MEM_MemWrite <= MemWrite;            // mem write enable
+            EX_MEM_MemtoReg <= MemtoReg;            // WB Selector
         end
     end
 
     // MEM/WB
     always@(posedge clk or negedge nrst) begin
         if (!nrst) begin
+            // Data Signals
             MEM_WB_inst <= 0;
             MEM_WB_WriteData <= 0;
+            // Control Signals
+            MEM_WB_RegWrite <= 0;
         end else begin
             MEM_WB_inst <= EX_MEM_inst;
-            MEM_WB_WriteData <= WriteData;      // data to write to register file
+            MEM_WB_WriteData <= WriteData;          // data to write to register file
+            MEM_WB_RegWrite <= EX_MEM_RegWrite;     // reg write enable
         end
     end
     

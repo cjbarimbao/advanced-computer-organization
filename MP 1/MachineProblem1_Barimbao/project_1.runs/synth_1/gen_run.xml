@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1687159965">
   <File Type="PA-TCL" Name="processor.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="processor_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="processor_reports.tcl"/>
   <File Type="RDS-RDS" Name="processor.vds"/>
   <File Type="RDS-UTIL" Name="processor_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="processor_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="processor.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="processor_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="processor_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/alu.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../advanced-computer-organization/MP 1/machine_problem.srcs/sources_1/new/alu.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../machine_problem.srcs/sources_1/new/alu.v"/>
         <Attr Name="ImportTime" Val="1686728666"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -22,7 +19,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/controller.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../advanced-computer-organization/MP 1/machine_problem.srcs/sources_1/new/controller.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../machine_problem.srcs/sources_1/new/controller.v"/>
         <Attr Name="ImportTime" Val="1686728666"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -31,7 +28,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/pc.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../advanced-computer-organization/MP 1/machine_problem.srcs/sources_1/new/pc.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../machine_problem.srcs/sources_1/new/pc.v"/>
         <Attr Name="ImportTime" Val="1686728666"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -40,7 +37,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/register_file.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../advanced-computer-organization/MP 1/machine_problem.srcs/sources_1/new/register_file.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../machine_problem.srcs/sources_1/new/register_file.v"/>
         <Attr Name="ImportTime" Val="1686728666"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -49,7 +46,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/sign_extend.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../advanced-computer-organization/MP 1/machine_problem.srcs/sources_1/new/sign_extend.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../machine_problem.srcs/sources_1/new/sign_extend.v"/>
         <Attr Name="ImportTime" Val="1686728666"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -58,7 +55,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/processor.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../advanced-computer-organization/MP 1/machine_problem.srcs/sources_1/new/processor.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../machine_problem.srcs/sources_1/new/processor.v"/>
         <Attr Name="ImportTime" Val="1686728666"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -88,7 +85,7 @@
     <File Path="$PSRCDIR/sources_1/new/top_module.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../advanced-computer-organization/MP 1/machine_problem.srcs/sources_1/new/top_module.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../machine_problem.srcs/sources_1/new/top_module.v"/>
         <Attr Name="ImportTime" Val="1686728666"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
