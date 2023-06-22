@@ -39,7 +39,7 @@ module tb_top_module;
     nrst = 0;
     #100;
     nrst = 1;
-    #1500;
+    #4000;
     $finish;
     end
 endmodule

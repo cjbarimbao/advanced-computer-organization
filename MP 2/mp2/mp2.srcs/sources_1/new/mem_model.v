@@ -9,10 +9,10 @@
 
 `timescale 1ns / 1ps
 //`include "defines.h"
-`define LDTEST
+//`define LDTEST
 //`define ATEST
 //`define BTEST
-//`define LTEST
+`define LTEST
 //`define JTEST
 //`define PLDTEST
 //`define PATEST
