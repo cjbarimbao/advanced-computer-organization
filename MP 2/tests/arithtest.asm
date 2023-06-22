@@ -1,5 +1,8 @@
 ld x20, 0(x0)
 ld x21, 8(x0)
+addi x0, x0, 0
+addi x0, x0, 0
+addi x0, x0, 0
 add x22, x20, x21
 sub x23, x20, x21
 and x24, x20, x21
