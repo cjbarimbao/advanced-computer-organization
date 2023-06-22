@@ -1,6 +1,6 @@
 Vivado Simulator 2019.2
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 013776e6e37947c2aa40d63f818fb9a3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_module_behav xil_defaultlib.tb_top_module xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 013776e6e37947c2aa40d63f818fb9a3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -16,7 +16,6 @@ Compiling module xil_defaultlib.controller
 Compiling module xil_defaultlib.processor
 Compiling module xil_defaultlib.mem_prog
 Compiling module xil_defaultlib.mem_model
-Compiling module xil_defaultlib.top_module
-Compiling module xil_defaultlib.tb_top_module
+Compiling module xil_defaultlib.tb_processor
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_top_module_behav
+Built simulation snapshot tb_processor_behav

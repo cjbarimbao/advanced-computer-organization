@@ -3,13 +3,14 @@
 Nov  6 2019
 21:57:16
 C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+,,,,,,tb_processor,,,,,,,,
 C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sim_1/new/tb_top_module.v,1687446042,verilog,,,,tb_top_module,,,,,,,,
 C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/alu.v,1687406652,verilog,,C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/controller.v,,alu,,,,,,,,
 C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/controller.v,1687428503,verilog,,C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/mem_model.v,,controller,,,,,,,,
-C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/mem_model.v,1687453134,verilog,,C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/mem_prog.v,,mem_model,,,,,,,,
-C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/mem_prog.v,1687453121,verilog,,C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/pc.v,,mem_prog,,,,,,,,
+C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/mem_model.v,1687458419,verilog,,C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/mem_prog.v,,mem_model,,,,,,,,
+C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/mem_prog.v,1687454912,verilog,,C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/pc.v,,mem_prog,,,,,,,,
 C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/pc.v,1687406749,verilog,,C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/processor.v,,pc,,,,,,,,
 C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/processor.v,1687427236,verilog,,C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/register_file.v,,processor,,,,,,,,
 C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/register_file.v,1687407350,verilog,,C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/sign_extend.v,,register_file,,,,,,,,
-C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/sign_extend.v,1687407334,verilog,,C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/top_module.v,,sign_extend,,,,,,,,
+C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/sign_extend.v,1687407334,verilog,,C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sim_1/new/tb_processor.v,,sign_extend,,,,,,,,
 C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/top_module.v,1687428153,verilog,,C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sim_1/new/tb_top_module.v,,top_module,,,,,,,,

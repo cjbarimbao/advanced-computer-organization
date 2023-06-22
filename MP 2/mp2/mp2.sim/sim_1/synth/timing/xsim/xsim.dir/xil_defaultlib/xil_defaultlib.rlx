@@ -1,0 +1,9 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.sim/sim_1/synth/timing/xsim/tb_processor_time_synth.v,1687458444,verilog,,C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/mem_model.v,,alu;glbl;pc;processor;register_file,,,,,,,,
+C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sim_1/new/tb_processor.v,1687455742,verilog,,,,tb_processor,,,,,,,,
+C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sim_1/new/tb_top_module.v,1687456104,verilog,,,,tb_top_module,,,,,,,,
+C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/mem_model.v,1687454899,verilog,,C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/mem_prog.v,,mem_model,,,,,,,,
+C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sources_1/new/mem_prog.v,1687454912,verilog,,C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.srcs/sim_1/new/tb_processor.v,,mem_prog,,,,,,,,

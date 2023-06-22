@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.sim/sim_1/behav/xsim/xsim.dir/tb_top_module_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Fri Jun 23 01:13:04 2023" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Fri Jun 23 01:22:21 2023" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2019.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2708876" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "3c535196-5889-49c8-a065-86227d7f2a2a" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "013776e6e37947c2aa40d63f818fb9a3" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "23" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "27" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Windows Server 2008 R2 or Windows 7" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "Service Pack 1  (build 7601)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz" -context "user_environment"
@@ -25,9 +25,9 @@ webtalk_register_client -client xsim
 webtalk_add_data -client xsim -key runall -value "true" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
-webtalk_add_data -client xsim -key runtime -value "23100 ns" -context "xsim\\usage"
-webtalk_add_data -client xsim -key iteration -value "1" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.01_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "12140_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 4174942718 -regid "" -xml C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.sim/sim_1/behav/xsim/xsim.dir/tb_top_module_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.sim/sim_1/behav/xsim/xsim.dir/tb_top_module_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.sim/sim_1/behav/xsim/xsim.dir/tb_top_module_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key runtime -value "4100 ns" -context "xsim\\usage"
+webtalk_add_data -client xsim -key iteration -value "0" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.03_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "12096_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 2477533250 -regid "" -xml C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.sim/sim_1/behav/xsim/xsim.dir/tb_top_module_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.sim/sim_1/behav/xsim/xsim.dir/tb_top_module_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/CJ/Desktop/advanced-computer-organization/MP 2/mp2/mp2.sim/sim_1/behav/xsim/xsim.dir/tb_top_module_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

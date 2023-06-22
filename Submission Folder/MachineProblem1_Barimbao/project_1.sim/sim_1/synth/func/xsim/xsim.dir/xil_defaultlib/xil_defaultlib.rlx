@@ -1,0 +1,9 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/CJ/Desktop/project_1/project_1.sim/sim_1/synth/func/xsim/tb_processor_func_synth.v,1687160071,verilog,,C:/Users/CJ/Desktop/project_1/project_1.srcs/sources_1/imports/memory_model/mem_model.v,,alu;glbl;pc;processor;register_file,,,,,,,,
+C:/Users/CJ/Desktop/project_1/project_1.srcs/sim_1/new/tb_processor.v,1686728666,verilog,,,,tb_processor,,,,,,,,
+C:/Users/CJ/Desktop/project_1/project_1.srcs/sim_1/new/tb_top_module.v,1686995263,verilog,,,,tb_top_module,,,,,,,,
+C:/Users/CJ/Desktop/project_1/project_1.srcs/sources_1/imports/memory_model/mem_model.v,1686994771,verilog,,C:/Users/CJ/Desktop/project_1/project_1.srcs/sources_1/imports/memory_model/mem_prog.v,,mem_model,,,,,,,,
+C:/Users/CJ/Desktop/project_1/project_1.srcs/sources_1/imports/memory_model/mem_prog.v,1686994781,verilog,,C:/Users/CJ/Desktop/project_1/project_1.srcs/sim_1/new/tb_processor.v,,mem_prog,,,,,,,,
